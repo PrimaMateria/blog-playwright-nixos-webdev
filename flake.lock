@@ -9,11 +9,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1724254747,
-        "narHash": "sha256-cJGxA2wR7R7yUBGdd4VF1yn7w1uWImvMhdRxO2RrRQo=",
+        "lastModified": 1724275136,
+        "narHash": "sha256-KwBEAZ9v/I5X+QdoEaXRXJH5SK1NsVXj/VLDmWqXCfM=",
         "owner": "primamateria",
         "repo": "dev-toolkit-nix",
-        "rev": "9eb87c45c24ecd1a193912d5d8883aa433de7845",
+        "rev": "2f3673236e29b3ce4c86504cc25f8c8d868e0542",
         "type": "github"
       },
       "original": {

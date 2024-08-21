@@ -15,7 +15,6 @@
           inherit system;
         };
 
-        # not used yet
         src = haumea.lib.load {
           src = ./.nix;
           inputs = {inherit pkgs;};
@@ -26,6 +25,16 @@
           profiles = [
             "node"
           ];
+          extraPackages = [
+            src.playwright-browsers-1_46_1
+          ];
+          extraShellHook = ''
+            # Prepare playwright
+            export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+            export PLAYWRIGHT_BROWSERS_PATH=${src.playwright-browsers-1_46_1}
+            export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
+          '';
+        };
       }
     );
 
